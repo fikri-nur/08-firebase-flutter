@@ -41,7 +41,7 @@ class _LoginEmailState extends State<LoginEmail> {
               const SizedBox(height: 40),
               TextField(
                 controller: emailController,
-                cursorColor: Colors.white,
+                cursorColor: Colors.black,
                 textInputAction: TextInputAction.next,
                 decoration: const InputDecoration(labelText: 'Email'),
               ),
@@ -52,18 +52,23 @@ class _LoginEmailState extends State<LoginEmail> {
                 decoration: const InputDecoration(labelText: 'Password'),
                 obscureText: true,
               ),
-              const SizedBox(height: 20),
-              ElevatedButton.icon(
-                style: ElevatedButton.styleFrom(
-                  minimumSize: const Size.fromHeight(50),
-                ),
-                icon: const Icon(Icons.lock_open, size: 32),
-                label: const Text(
-                  'Sign In',
-                  style: TextStyle(fontSize: 24),
-                ),
+              const SizedBox(height: 20), 
+              SizedBox(
+              width: 500,
+              height: 45,
+              child: TextButton(
+                style: TextButton.styleFrom(
+                      backgroundColor: Color.fromARGB(255, 34, 122, 194),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(25))),
                 onPressed: signIn,
+                child: const Text(
+                  "Log In",
+                  style:
+                      TextStyle(color: Color(0xffffffff), fontSize: 20),
+                ),
               ),
+            ),
             ],
           ),
         ),

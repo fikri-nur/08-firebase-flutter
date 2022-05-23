@@ -14,8 +14,8 @@ class FirstScreen extends StatelessWidget {
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
             colors: [
-              Color.fromARGB(255, 143, 205, 255),
-              Color.fromARGB(255, 0, 103, 188),
+              Color.fromARGB(255, 255, 255, 255),
+              Color.fromARGB(255, 34, 122, 194),
             ],
           ),
         ),
@@ -70,7 +70,7 @@ class FirstScreen extends StatelessWidget {
                     return const LoginPage();
                   }), ModalRoute.withName('/'));
                 },
-                color: Colors.lightBlue,
+                color: Colors.blueGrey,
                 child: const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Text(

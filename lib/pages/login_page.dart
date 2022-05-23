@@ -37,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _signInButton1() {
     return OutlineButton(
-      splashColor: Colors.grey,
+      splashColor: Color.fromARGB(255, 96, 156, 190),
       onPressed: () {
         Navigator.of(context).push(
           MaterialPageRoute(
@@ -62,23 +62,23 @@ class _LoginPageState extends State<LoginPage> {
           ),
         );
       },
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       highlightElevation: 0,
-      borderSide: const BorderSide(color: Colors.grey),
+      borderSide: const BorderSide(color: Color.fromARGB(255, 34, 122, 194),),
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+        padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Image(image: AssetImage("assets/email.png"), height: 35.0),
+            Image(image: AssetImage("assets/email.png"), height: 40.0),
             Padding(
-              padding: EdgeInsets.only(left: 10),
+              padding: EdgeInsets.all(10),
               child: Text(
                 'Sign in with Email',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Colors.grey,
+                  color: Color.fromARGB(255, 34, 122, 194),
                 ),
               ),
             )
@@ -90,7 +90,7 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _signInButton2() {
     return OutlineButton(
-      splashColor: Colors.grey,
+      splashColor: Color.fromARGB(255, 96, 156, 190),
       onPressed: () {
         signInWithGoogle().then((result) {
           if (result != null) {
@@ -104,23 +104,23 @@ class _LoginPageState extends State<LoginPage> {
           }
         });
       },
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
       highlightElevation: 0,
-      borderSide: const BorderSide(color: Colors.grey),
+      borderSide: const BorderSide(color: Color.fromARGB(255, 34, 122, 194),),
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
+        padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Image(image: AssetImage("assets/google.png"), height: 35.0),
+            Image(image: AssetImage("assets/google.png"), height: 40),
             Padding(
               padding: EdgeInsets.only(left: 10),
               child: Text(
                 'Sign in with Google',
                 style: TextStyle(
                   fontSize: 20,
-                  color: Colors.grey,
+                  color: Color.fromARGB(255, 34, 122, 194),
                 ),
               ),
             )

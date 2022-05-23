@@ -20,10 +20,6 @@ class MyApp extends StatelessWidget {
       navigatorKey: navigatorKey,
       debugShowCheckedModeBanner: false,
       home: const LoginPage(),
-//  child: const Icon(Icons.add),
-//       ), // This trailing comma makes auto-formatting nicer for build methods.
-//  child: const Icon(Icons.add),
-//       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
